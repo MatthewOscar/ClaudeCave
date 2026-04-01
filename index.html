@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ClaudeCave - Cave Explorer</title>
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  </head>
+  <body>
+    <div id="app">
+      <canvas id="game-canvas"></canvas>
+      <div id="hud">
+        <div id="score">Gems: <span id="gem-count">0</span></div>
+        <div id="depth">Depth: <span id="depth-count">0</span></div>
+        <div id="fuel">
+          Torch:
+          <div id="fuel-container"><div id="fuel-bar"></div></div>
+        </div>
+        <div id="best">Best: <span id="high-score">0</span></div>
+        <div id="instructions">WASD / Arrow Keys to move</div>
+      </div>
+      <div id="depth-announce"></div>
+      <div id="game-over">
+        <h2>Torch Extinguished</h2>
+        <p id="final-score"></p>
+        <button id="restart-btn">Try Again</button>
+      </div>
+      <div id="title-screen">
+        <h1>ClaudeCave</h1>
+        <p>Explore the procedurally generated caves</p>
+        <p>Collect gems as you descend deeper</p>
+        <button id="start-btn">Enter the Cave</button>
+      </div>
+    </div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
